@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/tuentable_back"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/random_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:text="Random Numbers"/>
+
+    <LinearLayout
+        android:id="@+id/relativeLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/random_title"
+        android:layout_marginTop="30dp"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:id="@+id/layout2"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="50dp"
+            android:gravity="center"
+            android:layout_marginStart="10dp"
+            android:background="@drawable/lay_random_sharp"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:text="Minimum"
+                android:textColor="@color/black"/>
+
+            <EditText
+                android:id="@+id/Minimum"
+                android:layout_width="100dp"
+                android:layout_height="35dp"
+                android:background="@drawable/random_sharp"
+                android:imeOptions="actionNext"
+                android:maxLength="6"
+                android:gravity="center"
+                android:text="1"
+                android:inputType="number"
+                android:layout_marginStart="5dp"/>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="50dp"
+            android:layout_marginStart="10dp"
+            android:gravity="center"
+            android:layout_marginEnd="10dp"
+            android:background="@drawable/lay_random_sharp"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:text="Maximum"
+                android:textColor="@color/black"/>
+
+            <EditText
+                android:id="@+id/Maximum"
+                android:layout_width="100dp"
+                android:layout_height="35dp"
+                android:background="@drawable/random_sharp"
+                android:gravity="center"
+                android:layout_marginStart="5dp"
+                android:maxLength="6"
+                android:text="10"
+                android:inputType="number"
+                android:imeOptions="actionNext"
+                />
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/relativeLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/relativeLayout1"
+        android:layout_marginTop="30dp"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:id="@+id/layout1"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="50dp"
+            android:gravity="center"
+            android:layout_marginStart="10dp"
+            android:background="@drawable/lay_random_sharp"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:text="Number"
+                android:textColor="@color/black"/>
+
+            <EditText
+                android:id="@+id/number_builds"
+                android:layout_width="100dp"
+                android:layout_height="35dp"
+                android:background="@drawable/random_sharp"
+                android:imeOptions="actionNext"
+                android:maxLength="4"
+                android:text="1"
+                android:gravity="center"
+                android:inputType="number"
+                android:layout_marginStart="5dp"/>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="50dp"
+            android:gravity="center"
+            android:layout_marginStart="10dp"
+            android:background="@drawable/lay_random_sharp"
+            android:layout_marginEnd="10dp"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Allow Repetition"
+                android:layout_gravity="center_vertical"
+                android:textColor="@color/black"/>
+
+            <ImageButton
+                android:id="@+id/AllowRepetition"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginStart="5dp"
+                android:background="@drawable/shutdown"
+                />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/relativeLayout2"
+        android:layout_above="@+id/startButton"
+        android:layout_marginBottom="20dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginTop="20dp"/>
+
+    <TextView
+        android:id="@+id/numbers"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="5"
+        android:textStyle="bold"
+        android:textSize="55sp"
+        android:textColor="@color/black"
+        android:visibility="gone"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"/>
+
+    <Button
+        android:id="@+id/startButton"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/turntable_bt"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:text="Start"
+        android:layout_marginBottom="60dp"/>
+
+
+</RelativeLayout>

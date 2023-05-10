@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/turntable"
+        android:icon="@drawable/zhuanp"
+        android:title="Turntable"/>
+    <item
+        android:id="@+id/dice"
+        android:icon="@drawable/sai_z"
+        android:title="Dice"/>
+    <item
+        android:id="@+id/game"
+        android:icon="@drawable/ying_b"
+        android:title="Coins"/>
+
+    <item
+        android:id="@+id/random"
+        android:icon="@drawable/random"
+        android:title="Random"/>
+    <item
+        android:id="@+id/setting"
+        android:icon="@drawable/she_zhi"
+        android:title="Setting"/>
+
+
+
+</menu>

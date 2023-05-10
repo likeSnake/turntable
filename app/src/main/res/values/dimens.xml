@@ -1,0 +1,4 @@
+<resources>
+    <dimen name="dice_size">50dp</dimen>
+    <dimen name="dice_throw_distance">200dp</dimen>
+</resources>

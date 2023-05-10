@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android" android:shape="rectangle" >
+    <!-- 设置内边距 -->
+    <padding
+        android:bottom="9dp"
+        android:left="9dp"
+        android:right="9dp"
+        android:top="9dp"
+          />
+    <!-- 设置圆角矩形 -->
+    <corners android:radius="10dp" />
+    <!-- 输入框背景颜色 -->
+    <solid android:color="@color/transparent" />
+    <!-- 外边框线的粗细及其颜色 -->
+    <stroke
+        android:width="2px"
+        android:color="#66A169" >
+    </stroke>
+
+</shape>
+
