@@ -96,8 +96,6 @@ public class RandomFragment extends Fragment implements View.OnClickListener{
             float b = 6.5f * progress;
             float value = (float) (ANIMATION_INTERVAL_START * Math.exp(b * Math.pow(progress, 2))) + ANIMATION_INTERVAL_END;
             // 转换为整数
-
-
             return Math.round(value);
         }
     };

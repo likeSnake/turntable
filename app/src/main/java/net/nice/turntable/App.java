@@ -23,7 +23,7 @@ import net.nice.turntable.util.MyUtil;
 
 /** Application class that initializes, loads and show ads when activities change states. */
 public class App extends Application
-        implements ActivityLifecycleCallbacks, DefaultLifecycleObserver {
+        implements ActivityLifecycleCallbacks {
 
     private int count=0;
     public  static Boolean isForground = true;
@@ -57,17 +57,6 @@ public class App extends Application
 
     }
 
-
-
-
-    /**
-     * DefaultLifecycleObserver method that shows the app open ad when the app moves to foreground.
-     */
-    @Override
-    public void onStart(@NonNull LifecycleOwner owner) {
-        DefaultLifecycleObserver.super.onStart(owner);
-
-    }
 
     /** ActivityLifecycleCallback methods. */
     @Override
